@@ -19,3 +19,5 @@
 
 ![capture1](https://image.ibb.co/iTMO9J/Kazam_screenshot_00000.png)
 
+###### Donate! 
+Bitcoin: 1A3a1p22EHXWq7muYZc9rGTmRGaithMnjR
