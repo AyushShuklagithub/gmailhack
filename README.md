@@ -7,7 +7,7 @@
 ### to ack victim account.Brute force attack is the only successful method to hack account
 ### but this process will take long time depend upon the length of password.
 
-### git clone https://github.com/xNetSecNowx/gmailhack.git
+### git clone https://github.com/xHak9x/gmailhack.git
     
 ### cd gmailhack
 
@@ -15,9 +15,6 @@
 
 ### python gmailhack.py
 
-### ScreenShot
-
-![capture1](https://image.ibb.co/iTMO9J/Kazam_screenshot_00000.png)
 
 ###### Donate! 
 Bitcoin: 1A3a1p22EHXWq7muYZc9rGTmRGaithMnjR

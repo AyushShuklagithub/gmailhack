@@ -1,12 +1,12 @@
 #!/usr/bin/python
-'''create by NetSecNow'''
+'''create by Hak9'''
 
 import smtplib
 from os import system
 
 def main():
    print '==================================================='
-   print '               create by NetSecNow                 '
+   print '               create by Hak9                 '
    print '==================================================='
    print '               ++++++++++++++++++++                '
    print '\n                                                 '
